@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="faq-container">
+        <h1>FAQs</h1>
+        <div class="content">
+            <!-- Left Side Image -->
+            <div class="faq-image">
+                <img src="https://img.freepik.com/free-vector/faqs-concept-illustration_114360-5185.jpg" alt="FAQ Illustration">
+            </div>
+            <!-- Right Side FAQ -->
+            <div class="faq-section">
+                <div class="faq-item">
+                    <h2>What is JavaScript?
+                     <i class="fas fa-chevron-down"></i>
+                    </h2>
+                  
+                    <p>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.</p>
+                </div>
+                <div class="faq-item">
+                    <h2>Is it easy to learn HTML and CSS?<i class="fas fa-chevron-down"></i></h2>
+                    <p>HTML and CSS are beginner-friendly languages and are essential for building web pages.</p>
+                </div>
+                <div class="faq-item">
+                    <h2>What is Web Development?<i class="fas fa-chevron-down"></i></h2>
+                    <p>Web development is the process of building, creating, and maintaining websites.</p>
+                </div>
+                <div class="faq-item">
+                    <h2>How can I start programming?<i class="fas fa-chevron-down"></i></h2>
+                    <p>You can start by learning basic languages like HTML, CSS, and JavaScript through online tutorials and resources.</p>
+                </div>
+                <div class="faq-item">
+                    <h2>What tools are needed for web development?<i class="fas fa-chevron-down"></i></h2>
+                    <p>Common tools include a code editor, browser, and platforms like Git for version control.</p>
+                </div>
+                <div class="faq-item">
+                    <h2>Can I use JavaScript to create interactive web pages?<i class="fas fa-chevron-down"></i></h2>
+                    <p>Yes, JavaScript can be used to create interactive web pages, such as buttons, forms, and animations.</p>
+        
+            </div>
+        </div>
+    </div>
+ 
+  
+</body>
+<script>
+   document.querySelectorAll('.faq-item h2').forEach(question => {
+       question.addEventListener('click', () => {
+           const parent = question.parentNode;
+           parent.classList.toggle('active');
+       });
+   });
+</script>
+</html>
+
